@@ -1,5 +1,53 @@
 #include <stdio.h>
 
+
+void encontrarModa(int array[], int tamanho) {
+    int frequencia[tamanho]; // Para armazenar a frequência de cada elemento
+    int moda[tamanho]; 
+    int maxFrequencia = 0;
+    int numModas = 0;
+
+    // Inicializa os arrays com zeros
+    for (int i = 0; i < tamanho; i++) {
+        frequencia[i] = 0;
+        moda[i] = 0;
+    }
+
+    // Calcula a frequência de cada elemento
+    for (int i = 0; i < tamanho; i++) {
+        frequencia[array[i]]++; // Incrementa a frequência do número lido
+    }
+
+    // Encontra a maior frequência
+    for (int i = 0; i < tamanho; i++) {
+        if (frequencia[i] > maxFrequencia) {
+            maxFrequencia = frequencia[i];
+        }
+    }
+
+    // Encontra todos os números com a maior frequência
+    for (int i = 0; i < tamanho; i++) {
+        if (frequencia[array[i]] == maxFrequencia) {
+            // Verifica se o número já não está na lista de modas
+            int j;
+            for (j = 0; j < numModas; j++) {
+                if (moda[j] == array[i]) {
+                    break;
+                }
+            }
+            if (j == numModas) { // Se não encontrado na lista, adiciona
+                moda[numModas++] = array[i];
+            }
+        }
+    }
+
+    // Exibe o resultado das modas
+    for (int i = 0; i < numModas; i++) {
+        printf("Moda: %d \n", moda[i]);
+    }
+}
+
+
 int main() {
     int tamanho;
     
@@ -29,50 +77,12 @@ int main() {
     // Calculando a média como um float
     float media = (float)soma / tamanho;
 
-    //Calculando a moda
-    int frequencia[tamanho] = {0}; // Para armazenar a frequência de cada elemento
-    int moda[tamanho]; // Para armazenar as modas (pode haver mais de uma moda)
-    int maxFrequencia = 0;
-    int numModas = 0;
-
-    // Calcula a frequência de cada elemento
-    for (int i = 0; i < tamanho; i++) {
-        frequencia[array[i]]++; // Incrementa a frequência do número lido
-    }
-
-    // Encontra a maior frequência
-    for (int i = 0; i < tamanho; i++) {
-        if (frequencia[array[i]] > maxFrequencia) {
-            maxFrequencia = frequencia[array[i]];
-        }
-    }
-
-    // Encontra todos os números com a maior frequência
-    for (int i = 0; i < tamanho; i++) {
-        if (frequencia[array[i]] == maxFrequencia) {
-            // Verifica se o número já não está na lista de modas
-            int j;
-            for (j = 0; j < numModas; j++) {
-                if (moda[j] == array[i]) {
-                    break;
-                }
-            }
-            if (j == numModas) { // Se não encontrado na lista, adiciona
-                moda[numModas++] = array[i];
-            }
-        }
-    }
-
-    // Exibe o resultado das modas
-    printf("Moda(s): \n");
-    for (int i = 0; i < numModas; i++) {
-        printf("%d ", moda[i]);
-    }
-    
-
     // Exibe o resultado da media
-    printf("\n A media dos numeros : %.2f\n", media);
+    printf("A media dos numeros : %.2f\n", media);
+
+    encontrarModa(array, tamanho);
     return 0;
+
 
 
 }
