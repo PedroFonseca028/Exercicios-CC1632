@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "func_estatisticas.c"
+#include "3_func_estatisticas.c"
 
 int main() {
     int tamanho;
