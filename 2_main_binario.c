@@ -1,4 +1,4 @@
-#include "binario.h"
+#include "2_binario.h"
 #include <stdio.h>
 
 int main() {
