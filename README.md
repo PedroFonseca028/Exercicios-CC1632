@@ -12,9 +12,9 @@
 
 
 -----Cadastro de Produtos usando Struct: Crie uma estrutura de dados chamada "Produto" que armazena nome, preço e quantidade em estoque. Permita ao usuário cadastrar produtos, exibir as informações e calcular o valor total em estoque (preço * quantidade).
-    1 - Salve os arquivos 1_produto.c, 1_produto.h e 1_func_produto.c em um mesmo diretório.
+    1 - Salve os arquivos 1_produto.c.
     2 - Abra um terminal e navegue até o diretório onde os arquivos estão salvos.
-    3 - Compile os arquivos utilizando um compilador C. Por exemplo, se estiver utilizando o GCC, você pode compilar da seguinte forma: gcc 1_produto.c 1_produto.h 1_func_produto.c
+    3 - Compile os arquivos utilizando um compilador C. Por exemplo, se estiver utilizando o GCC, você pode compilar da seguinte forma: gcc 1_produto.c
 
 
 -----Operações Matriciais: Implemente funções para multiplicação de matrizes e transposição. Utilize ponteiros para alocar dinamicamente o espaço de memória.
@@ -28,9 +28,9 @@
     3 - Compile os arquivos utilizando um compilador C. Por exemplo, se estiver utilizando o GCC, você pode compilar da seguinte forma: gcc maiusculas.c
 
 -----Leitura e Escrita de Registros em Arquivos Binários: Desenvolva um programa que cria e manipula um arquivo binário para armazenar registros de funcionários. Cada registro deve conter nome, idade e salário. Permita ao usuário adicionar novos registros, listar todos os registros e buscar por registros específicos pelo nome.
-    1 - Salve os arquivos 2_main_binario.c, 2_func_binario.c e 2_binario.h em um mesmo diretório.
+    1 - Salve os arquivos 2_main_binario.c.
     2 - Abra um terminal e navegue até o diretório onde os arquivos estão salvos.
-    3 - Compile os arquivos utilizando um compilador C. Por exemplo, se estiver utilizando o GCC, você pode compilar da seguinte forma: gcc 2_main_binario.c 2_func_binario.c 2_binario.h
+    3 - Compile os arquivos utilizando um compilador C. Por exemplo, se estiver utilizando o GCC, você pode compilar da seguinte forma: gcc 2_main_binario.c
 
 -----Ordenação de Structs: Crie um programa que ordena um array de structs com base em um dos campos (por exemplo, idade) usando qsort da biblioteca glibc.
     1 - Salve os arquivos main.c, contato.h e contato.c em um mesmo diretório.
@@ -43,11 +43,11 @@
     3 - Compile os arquivos utilizando um compilador C. Por exemplo, se estiver utilizando o GCC, você pode compilar da seguinte forma: gcc invertendo.c
 
 -----Cálculo de Estatísticas em um Array: Escreva um programa que recebe um array de números e calcula a média, mediana e moda dos elementos.
-    1 - Salve os arquivos 3_estatisticas.c e 3_func_estatistica.c em um mesmo diretório.
+    1 - Salve os arquivos 3_estatisticas.c
     2 - Abra um terminal e navegue até o diretório onde os arquivos estão salvos.
     3 - Compile os arquivos utilizando um compilador C. Por exemplo, se estiver utilizando o GCC, você pode compilar da seguinte forma: gcc 3_estatisticas.c
 
 -----Manipulação de Tempo: Utilize a biblioteca time.h para calcular o tempo que um determinado trecho de código leva para ser executado.
-    1 - Salve os arquivos 3_estatisticas.c e 3_func_estatistica.c em um mesmo diretório.
+    1 - Salve os arquivos           em um mesmo diretório.
     2 - Abra um terminal e navegue até o diretório onde os arquivos estão salvos.
-    3 - Compile os arquivos utilizando um compilador C. Por exemplo, se estiver utilizando o GCC, você pode compilar da seguinte forma: gcc 3_estatisticas.c
+    3 - Compile os arquivos utilizando um compilador C. Por exemplo, se estiver utilizando o GCC, você pode compilar da seguinte forma: 
